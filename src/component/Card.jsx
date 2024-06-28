@@ -25,7 +25,7 @@ export default function Productcard(
             Molestiae tenetur iste consectetur cum voluptates dicta non? Labore
             obcaecati quae animi.
           </p>
-          <p className="text-2xl text-yellow-200 text-center">price</p>
+          <p className="text-2xl text-red-400 text-center">price</p>
           <Link to="product/1">
             <button className="bg-purple-600 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded">
               view details
