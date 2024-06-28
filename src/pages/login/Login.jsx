@@ -25,6 +25,7 @@ export default function Login() {
                     required
                   />
                 </div>
+                <h2 className="text-red-600">Rewrite your Email</h2>
                 <div>
                   <label
                     htmlFor="password"
@@ -40,6 +41,7 @@ export default function Login() {
                     placeholder="••••••••"
                     required
                   />
+                  <h2 className="text-red-600">Wrong password</h2>
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-start">
@@ -88,9 +90,6 @@ export default function Login() {
           </div>
         </div>
       </section>
-      <h1 className="text-3xl font-bold underline bg-slate-500">
-        Hello world!
-      </h1>
     </>
   );
 }

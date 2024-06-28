@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/NotFound/NotFound";
+import Card from "./component/Card";
 function App() {
   let routes = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ function App() {
         { path: "login", element: <Login /> },
         { path: "register", element: <Register /> },
         { path: "*", element: <NotFound /> },
+        { path: "card", element: <Card /> },
       ],
     },
   ]);
