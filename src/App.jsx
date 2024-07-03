@@ -6,7 +6,8 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/NotFound/NotFound";
-import Card from "./component/Card";
+import Card from "./component/card/Card";
+// import Card from "./component/Card";
 function App() {
   let routes = createBrowserRouter([
     {
