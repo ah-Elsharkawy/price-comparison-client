@@ -7,6 +7,7 @@ import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Card from "./component/Card";
+import AuthLayout from "./layout/AuthLayout";
 function App() {
   let routes = createBrowserRouter([
     {
@@ -14,10 +15,17 @@ function App() {
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
+        { path: "card", element: <Card /> },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
+    {
+      path: "",
+      element: <AuthLayout />,
+      children: [
         { path: "login", element: <Login /> },
         { path: "register", element: <Register /> },
         { path: "*", element: <NotFound /> },
-        { path: "card", element: <Card /> },
       ],
     },
   ]);
